@@ -118,11 +118,12 @@ describe('extractTable', () => {
 
     expect(result.columns[0]).toEqual({
       name: 'id',
-      type: 'int4[]',
+      type: 'integer[]',
       isArray: true,
       reference: null,
       defaultValue: null,
       indices: [],
+      informationSchemaValue: result.columns[0].informationSchemaValue,
       isNullable: true,
       isPrimaryKey: false,
       generated: 'NEVER',
@@ -130,7 +131,7 @@ describe('extractTable', () => {
       isIdentity: false,
       ordinalPosition: 1,
       maxLength: null,
-      subType: 'int4',
+      subType: '_int4',
     });
   });
 
