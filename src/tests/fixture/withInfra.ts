@@ -2,7 +2,6 @@ import { Knex } from 'knex';
 import { StartedTestContainer } from 'testcontainers';
 import { BlockWith, TestWith, use } from './withFixture';
 import withPostgresContainer from './withPostgresContainer';
-import withSchema from './withSchema';
 import withTestKnex from './withTestKnex';
 
 const withInfra = (

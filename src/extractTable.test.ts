@@ -17,7 +17,7 @@ const makePgType = (
   comment: null,
 });
 
-test.describe('extractTable', (test) => {
+test.describe('extractTable', () => {
   withInfra(test, (test) => {
     withSchema(test, 'test', (test) => {
       test.it(
